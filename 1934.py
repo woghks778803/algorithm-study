@@ -43,33 +43,3 @@ for i in range(test_case_cnt):
     #         if num1 % i == 0 and num2 % i == 0:
     #             gcd = i
     #             break
-    
-    
-
-
-# 테스트 케이스별 최소공배수 산출
-# for test_case in test_case_list:
-
-# T=int(input())
-# c=1
-# for i in range(T):
-#     a,b=map(int,input().split())
-#     if b<a:
-#         temp=b
-#         b=a
-#         a=temp
-#     one=a
-#     two=b
-
-#     chk = False
-#     while b%a != 0: 
-#         chk = True
-#         c=b%a
-#         b=a
-#         a=c
-    
-#     if chk == False:
-#         c = one
-#     print(int(one*two/c))
-
-# print(test_case_list)
