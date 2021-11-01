@@ -14,6 +14,7 @@ input_str_len = len(input_str)
 
 for croatia_alphabet in croatia_alphabets:
     st = [i for i in re.finditer(croatia_alphabet, input_str)]
+    # print(st)
     croatia_alphabets[croatia_alphabet] = len(st)
 
 if croatia_alphabets["dz="] == 0: pass
@@ -24,3 +25,7 @@ for croatia_alphabet in croatia_alphabets:
     input_str_len = input_str_len + (1-len(croatia_alphabet))*croatia_alphabets[croatia_alphabet]
 
 print(input_str_len)
+
+"""
+dz=dz=
+"""
