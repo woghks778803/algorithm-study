@@ -22,6 +22,7 @@ for i in range(E):
         graph[p2] = {p1 : v}
 v1, v2 = map(int, sys.stdin.readline().split())
 q = []
+# print(graph)
 
 def dijkstra(start, end):
     # 비교값 저장
