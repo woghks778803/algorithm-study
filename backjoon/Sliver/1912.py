@@ -1,6 +1,6 @@
 # 실버2
 # 연속합
-# x
+# X
 N = int(input())
 test_case = list(map(int, input().split()))
 

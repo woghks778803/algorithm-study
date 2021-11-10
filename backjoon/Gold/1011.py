@@ -1,6 +1,6 @@
 # 골드5
 # Fly me to the Alpha Centauri
-# x
+# X
 import sys
 import math
 T = int(sys.stdin.readline().strip())
