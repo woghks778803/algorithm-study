@@ -2,14 +2,19 @@
 # 인공지능 시계
 h, m, s = map(int, input().split())
 active_s = int(input())
+active_m = (active_s+s)//60
+active_h = (active_m+m)//60
+active_d = (active_h+h)//24
 
-active_m = int((active_s+s)/60)
-mod_s = (active_s+s)%60 
+print((active_h+h)%24, (active_m+m)%60, (active_s+s)%60)
 
-active_h = int((active_m+m)/60)
-mod_m = (active_m+m)%60 
+"""
+14 30 0
+200
 
-active_d = int((active_h+h)/24)
-mod_h = (active_h+h)%24 
+17 40 45
+6015
 
-print(mod_h, mod_m, mod_s)
+23 48 59
+2515
+"""
