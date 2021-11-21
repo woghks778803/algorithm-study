@@ -21,7 +21,7 @@ team_list = list(itertools.combinations(n_list, count))
 result = []
 for i in range(len(team_list)//2):
     # 팀1의 능력치 합 - 팀2의 능력치 합 
-    diff_abs = abs(team_avility_sum(team_list[i]) - team_avility_sum(team_list[len(team_list)-(i+1)]))
+    diff_abs = abs(team_avility_sum(team_list[i]) - team_avility_sum(team_list[-1-i]))
     result.append(diff_abs)
 
 print(min(result))
