@@ -4,6 +4,7 @@ import sys
 a, b, c = map(int, sys.stdin.readline().split())
 print(pow(a, b, c))
 
+# 페르마의 소정리+거듭제곱
 def my_pow(a,b,c):
     if b == 1:
         return a%c
