@@ -8,8 +8,6 @@ INF = 1000000007
 def my_pow(a, b):
     ans = 1
     while b > 0:
-        print(b)
-        print(ans)
         if b % 2 == 1:
             ans = (ans*a) % INF
         a = (a*a) % INF
