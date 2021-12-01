@@ -1,5 +1,5 @@
-# 실버1
-# 최소 힙
+# 실버2
+# 최대 힙
 import sys
 import heapq
 N = int(sys.stdin.readline())
@@ -8,20 +8,25 @@ arr = []
 for i in range(N):
     command = int(sys.stdin.readline())
     if command == 0:
-        if arr: sys.stdout.write(str(heapq.heappop(arr))+"\n")
+        if arr: sys.stdout.write(str(abs(heapq.heappop(arr)))+"\n")
         else: sys.stdout.write(str(0)+"\n")
     else:
-        heapq.heappush(arr, command)
+        heapq.heappush(arr, -command)
+        
 
 """
-9
+13
 0
-12345678
 1
 2
 0
 0
+3
+2
+1
 0
 0
-32
+0
+0
+0
 """
