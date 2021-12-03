@@ -2,7 +2,7 @@
 # 검문
 N = int(input())
 T = [int(input()) for _ in range(N)]
-# 유클리드 호제법
+# 공식 - 유클리드 호제법
 def uc(b, s):
     while True:
         if b % s == 0: break

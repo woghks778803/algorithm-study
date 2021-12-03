@@ -6,6 +6,7 @@ M, N = map(int, sys.stdin.readline().split())
 PN = [True for _ in range(N+1)]
 PN[0] = False
 PN[1] = False
+# 공식 - 에라토스테네스의 체
 for i in range(2, N+1):
     if not PN[i]: continue
     for j in range(i*2, N+1, i):

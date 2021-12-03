@@ -24,6 +24,7 @@ v1, v2 = map(int, sys.stdin.readline().split())
 q = []
 # print(graph)
 
+# 다익스트라
 def dijkstra(start, end):
     # 비교값 저장
     distance = [INF] * (N+1)
