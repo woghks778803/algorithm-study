@@ -4,11 +4,11 @@ import sys
 sys.setrecursionlimit(10**6) # 백준 런타임에러
 N = int(input())
 INF = 1000000007
+mat = {}
 
 def my_pow(n):
     return (n*n)%INF
 
-mat = {}
 # 공식 - 도가뉴의 항등식
 # a2n-1 = (an)2+(an-1)2
 # a2n = an(an+2*an-1)
