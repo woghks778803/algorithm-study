@@ -7,6 +7,7 @@ def root_value_find(r): # root 값 찾기
     r = root_find(r)
     return cnt[r]+1
 
+# union-find 알고리즘
 def union(p, c):
     x = root_find(p)
     y = root_find(c)

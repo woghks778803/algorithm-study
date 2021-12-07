@@ -5,6 +5,7 @@ N, M = map(int, sys.stdin.readline().split())
 p = {i : i for i in range(N+1)}
 d = {i : 0 for i in range(N+1)}
 
+# union-find 알고리즘
 def union(parent, child):
     x = find(parent)
     y = find(child)
