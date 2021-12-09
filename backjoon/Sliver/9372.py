@@ -26,6 +26,14 @@ for _ in range(T):
         graph[a].append(b)
         graph[b].append(a)
 
+    # for i in graph:
+    #     for j in graph[i]:
+    #         count = 1
+    #         country_check = [False for _ in range(N)]
+    #         country_check[i-1] = True
+    #         country_check[j-1] = True
+    #         bfs(j, country_check, count)
+
     sys.stdout.write(str(N-1)+"\n")
 
 """
