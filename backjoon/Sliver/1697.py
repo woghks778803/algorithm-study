@@ -7,6 +7,7 @@ visit = [False for _ in range(INF+1)]
 depth = [0 for _ in range(INF+1)]
 move_point = [-1, 1, 2]
 
+# bfs 알고리즘
 def bfs():
     loop_check = False
     deq = deque()

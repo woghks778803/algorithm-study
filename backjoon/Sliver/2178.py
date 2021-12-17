@@ -6,6 +6,7 @@ T = [list(map(int, input())) for _ in range(N)]
 visit = [[False for _ in range(M)] for _ in range(N)]
 depth = [[0 for _ in range(M)] for _ in range(N)]
 
+# bfs 알고리즘
 def bfs():
     deq = deque()
     loop_check = False

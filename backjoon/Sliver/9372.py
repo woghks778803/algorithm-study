@@ -3,6 +3,7 @@
 from collections import defaultdict 
 import sys
 
+# bfs 알고리즘
 def bfs(cur_point, country_check, count):
     for i in graph[cur_point]:
         if country_check[i-1] == False:

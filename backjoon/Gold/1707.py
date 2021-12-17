@@ -9,7 +9,7 @@ TYPE2 = 2
 TYPENONE = None
 result = []
 
-# 너비 우선 탐색
+# bfs 알고리즘
 def bfs(start):
     deq = deque()
     deq.append([start, TYPE2])

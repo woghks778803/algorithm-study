@@ -4,6 +4,7 @@ import sys
 from collections import defaultdict
 from collections import deque
 
+# dfs 알고리즘
 def dfs(visit, next):
     global graph
     visit.append(next)
@@ -14,6 +15,7 @@ def dfs(visit, next):
             dfs(visit, i)
     return visit
 
+# bfs 알고리즘
 def bfs(start):
     deq = deque()
     visit = [start]

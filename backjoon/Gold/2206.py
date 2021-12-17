@@ -8,6 +8,7 @@ move_x = [0, 0, 1, -1]
 move_y = [1, -1, 0, 0]
 loop_check = False
 
+# bfs 알고리즘
 def bfs():
     deq = deque()
     deq.append([0, 0, 0])

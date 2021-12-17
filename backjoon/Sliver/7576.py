@@ -5,6 +5,7 @@ N, M = map(int, input().split())
 T = [list(map(int, input().split())) for _ in range(M)]
 depth = [[0 for _ in range(N)] for _ in range(M)]
 
+# bfs 알고리즘
 def bfs():
     move_x = [0, 0, 1, -1]
     move_y = [1, -1, 0, 0]

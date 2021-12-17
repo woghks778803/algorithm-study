@@ -6,6 +6,7 @@ knight_x = [-2, -1, 1, 2, 2, 1, -1, -2]
 knight_y = [1, 2, 2, 1, -1, -2, -2, -1]
 result = []
 
+# bfs 알고리즘
 def bfs(start_x, start_y, end_x, end_y):
     # 방문 영역
     visit_chess = [[False for _ in range(I)] for _ in range(I)]
