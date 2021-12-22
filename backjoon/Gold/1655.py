@@ -17,7 +17,7 @@ for _ in range(N):
 
     # print(max_heap, min_heap)
     # 두 값의 중앙값을 비교한다. 최소 힙의 중앙값보다 최대 힙의 중앙값이 큰 경우 교환
-    # 최대 힙은 중앙값이 가장 작고 최소 힙은 중앙값이 가장 큼
+    # 최대 힙은 중앙값이 최솟값 최소 힙은 중앙값이 최댓값
     if min_heap and min_heap[0][1] < max_heap[0][1]:
         temp_a = heapq.heappop(min_heap)[1] # now 값 불러오기
         temp_b = heapq.heappop(max_heap)[1] # now 값 불러오기
