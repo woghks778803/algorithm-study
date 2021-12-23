@@ -8,6 +8,7 @@ count = 1
 interval_sum = num_list[0]
 count_list = []
 
+# 투 포인터
 # start를 차례대로 증가시키며 반복
 for start in range(N):
     # end만큼 이동시키기
