@@ -4,8 +4,8 @@ N, S = map(int, input().split())
 num_list = list(map(int, input().split()))
 
 end = 0
-count = 1
-interval_sum = num_list[0]
+count = 0
+interval_sum = 0
 count_list = []
 
 # 투 포인터
@@ -13,11 +13,9 @@ count_list = []
 for start in range(N):
     # end만큼 이동시키기
     while interval_sum < S and end < N:
-        end += 1
-        if end >= N: # 길이 초과 방지
-            break
         interval_sum += num_list[end]
         count += 1
+        end += 1
 
     # 부분합이 S이상일 때 카운트 저장
     if interval_sum >= S:
@@ -43,15 +41,15 @@ else:
 
 10 30
 11 2 5 6 8 9 2 3 10 9
-4
+5
 
 14 114
 11 12 13 14 15 16 17 18 25 26 27 28 29 30
 4
 
-10 38
+11 38
 11 2 5 6 8 9 2 3 10 9 10
-4
+6
 
 10 189
 
@@ -71,17 +69,13 @@ else:
 3 2 2 2 2 2
 1
 
-6 1
-2 3 1 1 1 1
-1
-
 10 100
 5 1 3 5 10 7 4 9 2 8
+0
 
 6 15
 1 1 5 8 1 1
-
-
+4
 """
 
 

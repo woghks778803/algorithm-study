@@ -2,6 +2,7 @@
 # 검문
 N = int(input())
 T = [int(input()) for _ in range(N)]
+
 # 공식 - 유클리드 호제법
 def uc(b, s):
     while True:
@@ -11,13 +12,13 @@ def uc(b, s):
         s = temp % s
     return s
 
+# 두 수의 차이에 대해 최대공약수 구하기
 b = abs(T[1] - T[0])
-for i in range(1, N):
-    a = T[i]
+for i in range(2, N):
     b = uc(abs(T[i] - T[i-1]), b)
 
+# 최대공약수의 약수구하기
 divisorsList = []
-
 for i in range(2, int(b**(1/2)) + 1):
     if (b % i == 0):
         divisorsList.append(i) 
