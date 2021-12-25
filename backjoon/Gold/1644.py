@@ -29,7 +29,7 @@ for start in range(len(sosu)):
     interval_sum -= sosu[start]
 
 print(count)
-
+# print(sosu)
 
 """
 3999971
