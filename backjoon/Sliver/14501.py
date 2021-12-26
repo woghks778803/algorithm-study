@@ -47,13 +47,3 @@ for j in range(0, len(scheduler_list)):
     benifit(scheduler_list[j], j, progress_date, work_dday, 0)
 
 print(max_benifit)
-
-# print(scheduler_list)
-# print("실행할 업무 내용- : ",scheduler_info)
-# print("실행일자 번호 : ",index)
-# print("남은 날짜 : ",dday-progress_date, dday <= progress_date, progress_date, dday)
-# print("남은 업무처리일 : ",work_dday)
-# print("이익금 : ", return_money)
-    
-# 5
-# 3 50
