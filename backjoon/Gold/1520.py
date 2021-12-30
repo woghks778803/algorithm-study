@@ -6,10 +6,10 @@ sys.setrecursionlimit(10**6) # 백준 런타임에러
 # dfs 알고리즘
 def dfs(x, y):
     if y == N - 1 and x == M - 1: return 1
-    if DP[y][x] != -1: return DP[y][x]
-
     # 초기값과 방문시 셋팅값이 다른이유는 재탐색 방지를 위해서이다
+    if DP[y][x] != -1: return DP[y][x]
     DP[y][x] = 0
+    
     for i in range(4):
         next_x = x+move[i][0]
         next_y = y+move[i][1]
