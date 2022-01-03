@@ -1,18 +1,19 @@
 # 실버1
 # 동전 2
-N, K = map(int, input().split())
+import sys
+N, K = map(int, sys.stdin.readline().split())
 INF = 100001
-T = [int(input()) for _ in range(N)]
+T = [int(sys.stdin.readline()) for _ in range(N)] # 값이 정렬되어있지않음
 DP = [INF for _ in range(K+1)]
 
 for i in range(1, K+1):
     for j in range(N):
         if i == T[j]: 
             DP[i] = 1
-            break
+            break # 1보다 낮은 경우의 수는 없으니 해당 루프 탈출
+        if K < T[j]: continue # 기준값 초과로 제외 처리
 
-        if K < T[j] or i < T[j]: continue
-        DP[i] = min(DP[i], DP[i-T[j]]+1)
+        DP[i] = min(DP[i], DP[i-T[j]]+1) # 현재 dp값과 t[j] 값을 뺀 이전 dp값이 비교
 
 if DP[K] == INF:
     print(-1)
