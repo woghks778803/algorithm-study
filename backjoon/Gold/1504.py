@@ -41,8 +41,6 @@ def dijkstra(start, end):
                 heapq.heappush(q, (cost, i))
                 # print(graph[now], i, graph[now][i], dist, now)
 
-    # print("distance: ", distance)
-    # print("end : ", distance[end])
     return distance[end]
 
 path1 = dijkstra(1, v1) + dijkstra(v1, v2) + dijkstra(v2, N)
