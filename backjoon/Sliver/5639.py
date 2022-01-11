@@ -13,6 +13,7 @@ def postOrder(start, end):
     postOrder(start+1, idx-1)
     postOrder(idx, end)
     print(arr[start])
+    # print(start, end, arr[start])
 
 if __name__ == "__main__":  
     import sys
