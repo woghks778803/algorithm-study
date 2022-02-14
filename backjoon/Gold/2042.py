@@ -1,5 +1,7 @@
 # 골드1
 # 구간 합 구하기
+
+# 세그먼트 트리
 def init(start, end, node):
     if start == end: 
         tree[node] = T[start-1]
