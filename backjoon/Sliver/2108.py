@@ -2,20 +2,33 @@
 # 통계학
 import sys
 from collections import Counter
-test_case=[]
-test_case_cnt=int(input())
-for i in range(test_case_cnt):
-    test_case.append(int(sys.stdin.readline()))
-test_case.sort()
+input = sys.stdin.readline
+N = int(input())
+T = sorted([int(input()) for _ in range(N)])
+counter = Counter(T)
 
-d=Counter(test_case)
-M=max(d.values())
-m=0
-for i in range(test_case_cnt):
-    if (i==0)|(test_case[i-1]!=test_case[i]):k=1
-    else:k+=1
-    if M==k:
-        if m:m=test_case[i];break
-        else:m=test_case[i]
+result = []
+max_num = max(counter.values())
+for i in counter:
+    if max_num == counter[i]: result.append(i)
 
-print('%.0f'%(sum(test_case)/test_case_cnt),test_case[(test_case_cnt-1)//2],m,max(test_case)-min(test_case),sep='\n')
+print(round(sum(T)/N))
+print(T[N//2])
+if len(result) > 1:
+    result.sort()
+    print(result[1])
+else: print(result[0])
+print(max(T)-min(T))
+"""
+5
+1
+3
+8
+-2
+2
+
+3
+0
+0
+-1
+"""
