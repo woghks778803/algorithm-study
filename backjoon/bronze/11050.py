@@ -5,7 +5,7 @@ def factorial(n):
         return 1
     else:
         if DP[n-1] == 0:
-            DP[n-1]  = factorial(n-1)
+            DP[n-1] = factorial(n-1)
         return n * DP[n-1]
 
 if __name__ == "__main__":
