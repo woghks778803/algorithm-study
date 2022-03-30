@@ -11,11 +11,6 @@ for i in range(1, N-M+1):
     if sum_num > result: result = sum_num
 
 print(result)
-# temp = 0
-# for i in range(N-M+1):
-#     temp = sum(T[i:i+M])
-# print(temp)
-
 
 """
 5 3
