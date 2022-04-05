@@ -38,7 +38,6 @@ if __name__ == "__main__":
         else:
             graph[s] = [e]
     
-    result = []
     result = dijkstra(graph, X)
 
     if not result:
