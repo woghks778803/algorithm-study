@@ -1,5 +1,6 @@
 # 브론즈3
 # A+B - 4
+# 테스트케이스 무중단 처리
 # 답1
 import sys
 arr = sys.stdin.readlines()
